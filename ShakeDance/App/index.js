@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { Tabs } from './Router';
 
 export default class extends Component {
-  render () {
-    return <View>
-      <MainMenu />
-    </View>
+  render() {
+    return [
+      <Tabs key={0}/>
+    ]
   }
 }

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -37,6 +36,16 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		374BDB218FCB48C0A49144E1 /* BarlowSemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82760AE758ED41789D8284AE /* BarlowSemiCondensed-Bold.ttf */; };
+		8B2630455AB14A2CAA500561 /* BarlowSemiCondensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F41A1CB4C4492C870546A1 /* BarlowSemiCondensed-ExtraLight.ttf */; };
+		47C55678B778482A9CE02452 /* BarlowSemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F01F68E578984296A957B06B /* BarlowSemiCondensed-Light.ttf */; };
+		716B5A2CB0FC40E68C1525D0 /* BarlowSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B589EE306E894CCB9C8784FD /* BarlowSemiCondensed-Medium.ttf */; };
+		FD81CB32BD73494D8F615272 /* BarlowSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90D19152AFD34749B07F7EB3 /* BarlowSemiCondensed-Regular.ttf */; };
+		C90942753BAE45679C9A6EA6 /* BarlowSemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 987D41C279AB4C9CAF80E3D2 /* BarlowSemiCondensed-SemiBold.ttf */; };
+		8EF9B7DFCFD844B6B3E6E46D /* BarlowSemiCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66416A21C1BB482FBBC3CD52 /* BarlowSemiCondensed-Thin.ttf */; };
+		2F29010A92A84966866EE479 /* Caveat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95EDE5B51C5841E4B717B4C3 /* Caveat-Bold.ttf */; };
+		7AFA07416A734404A53AB9E5 /* Caveat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E093610D5D974CB0987B42F2 /* Caveat-Regular.ttf */; };
+		40C33BE78B7841D091EF3A68 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2768834744FD78911D8A8 /* libBVLinearGradient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +295,17 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		82760AE758ED41789D8284AE /* BarlowSemiCondensed-Bold.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Bold.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		04F41A1CB4C4492C870546A1 /* BarlowSemiCondensed-ExtraLight.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-ExtraLight.ttf"; path = "../assets/fonts/BarlowSemiCondensed-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F01F68E578984296A957B06B /* BarlowSemiCondensed-Light.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Light.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B589EE306E894CCB9C8784FD /* BarlowSemiCondensed-Medium.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Medium.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90D19152AFD34749B07F7EB3 /* BarlowSemiCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Regular.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		987D41C279AB4C9CAF80E3D2 /* BarlowSemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-SemiBold.ttf"; path = "../assets/fonts/BarlowSemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66416A21C1BB482FBBC3CD52 /* BarlowSemiCondensed-Thin.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Thin.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		95EDE5B51C5841E4B717B4C3 /* Caveat-Bold.ttf */ = {isa = PBXFileReference; name = "Caveat-Bold.ttf"; path = "../assets/fonts/Caveat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E093610D5D974CB0987B42F2 /* Caveat-Regular.ttf */ = {isa = PBXFileReference; name = "Caveat-Regular.ttf"; path = "../assets/fonts/Caveat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D12227A122604017944B3DC1 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		22B2768834744FD78911D8A8 /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +334,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				40C33BE78B7841D091EF3A68 /* libBVLinearGradient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +512,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				D12227A122604017944B3DC1 /* BVLinearGradient.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -512,6 +534,7 @@
 				00E356EF1AD99517003FC87E /* ShakeDanceTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				4B5513217A8045B5974161E4 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -537,6 +560,23 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		4B5513217A8045B5974161E4 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				82760AE758ED41789D8284AE /* BarlowSemiCondensed-Bold.ttf */,
+				04F41A1CB4C4492C870546A1 /* BarlowSemiCondensed-ExtraLight.ttf */,
+				F01F68E578984296A957B06B /* BarlowSemiCondensed-Light.ttf */,
+				B589EE306E894CCB9C8784FD /* BarlowSemiCondensed-Medium.ttf */,
+				90D19152AFD34749B07F7EB3 /* BarlowSemiCondensed-Regular.ttf */,
+				987D41C279AB4C9CAF80E3D2 /* BarlowSemiCondensed-SemiBold.ttf */,
+				66416A21C1BB482FBBC3CD52 /* BarlowSemiCondensed-Thin.ttf */,
+				95EDE5B51C5841E4B717B4C3 /* Caveat-Bold.ttf */,
+				E093610D5D974CB0987B42F2 /* Caveat-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -619,7 +659,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -928,6 +968,15 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				374BDB218FCB48C0A49144E1 /* BarlowSemiCondensed-Bold.ttf in Resources */,
+				8B2630455AB14A2CAA500561 /* BarlowSemiCondensed-ExtraLight.ttf in Resources */,
+				47C55678B778482A9CE02452 /* BarlowSemiCondensed-Light.ttf in Resources */,
+				716B5A2CB0FC40E68C1525D0 /* BarlowSemiCondensed-Medium.ttf in Resources */,
+				FD81CB32BD73494D8F615272 /* BarlowSemiCondensed-Regular.ttf in Resources */,
+				C90942753BAE45679C9A6EA6 /* BarlowSemiCondensed-SemiBold.ttf in Resources */,
+				8EF9B7DFCFD844B6B3E6E46D /* BarlowSemiCondensed-Thin.ttf in Resources */,
+				2F29010A92A84966866EE479 /* Caveat-Bold.ttf in Resources */,
+				7AFA07416A734404A53AB9E5 /* Caveat-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1059,6 +1108,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeDance.app/ShakeDance";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+				);
 			};
 			name = Debug;
 		};
@@ -1076,6 +1133,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeDance.app/ShakeDance";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+				);
 			};
 			name = Release;
 		};
@@ -1094,6 +1159,10 @@
 				);
 				PRODUCT_NAME = ShakeDance;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+				);
 			};
 			name = Debug;
 		};
@@ -1111,6 +1180,10 @@
 				);
 				PRODUCT_NAME = ShakeDance;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+				);
 			};
 			name = Release;
 		};
@@ -1137,6 +1210,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+				);
 			};
 			name = Debug;
 		};
@@ -1163,6 +1244,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+				);
 			};
 			name = Release;
 		};
@@ -1184,6 +1273,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeDance-tvOS.app/ShakeDance-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1205,6 +1298,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeDance-tvOS.app/ShakeDance-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};
