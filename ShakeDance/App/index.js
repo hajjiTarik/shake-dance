@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class Entry extends Component {
+export default class extends Component {
   render () {
     return <View>
-      <Text>Hello, shake me</Text>
+      <MainMenu />
     </View>
   }
 }
-
-export default Entry;

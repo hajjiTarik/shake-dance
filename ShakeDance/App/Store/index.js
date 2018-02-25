@@ -1,6 +1,7 @@
 import { applyMiddleware, createStore } from 'redux';
 import rootReducer from './reducers';
-import createThunkMiddleware from 'redux-thunk';
+import thunk  from 'redux-thunk';
+
 
 
 export const preloadState = {};
@@ -10,19 +11,20 @@ export const preloadState = {};
  * @returns {{run: *}}
  * @constructor
  */
-function Store(initialState = preloadState) {
-  const thunkMiddleware = createThunkMiddleware();
-  const middleware = [thunkMiddleware];
+export class Store {
+  constructor(initialState = preloadState) {
+    const middleware = [thunk];
 
-  const store = createStore(
-    rootReducer,
-    initialState,
-    applyMiddleware(...middleware)
-  );
+    const store = createStore(
+      rootReducer,
+      initialState,
+      applyMiddleware(...middleware)
+    );
 
-  return {
-    ...store,
-    run: sagaMiddleware.run
+    Object.assign(this, store);
   }
 }
-export default Store;
+
+// singleton
+export const store = Object.freeze(new Store({}));
+
