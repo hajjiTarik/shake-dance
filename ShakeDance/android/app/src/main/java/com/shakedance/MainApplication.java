@@ -3,6 +3,20 @@ package com.shakedance;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.zmxv.RNSound.RNSoundPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.zmxv.RNSound.RNSoundPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.rnim.rn.audio.ReactNativeAudioPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,6 +38,20 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new VectorIconsPackage(),
+            new RNSoundPackage(),
+            new LinearGradientPackage(),
+            new RNSoundPackage(),
+            new VectorIconsPackage(),
+            new LinearGradientPackage(),
+            new VectorIconsPackage(),
+            new LinearGradientPackage(),
+            new ReactNativeAudioPackage(),
+            new VectorIconsPackage(),
+            new LinearGradientPackage(),
+            new VectorIconsPackage(),
+            new LinearGradientPackage(),
+            new LinearGradientPackage(),
             new LinearGradientPackage()
       );
     }

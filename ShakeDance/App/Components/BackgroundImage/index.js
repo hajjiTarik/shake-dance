@@ -3,21 +3,22 @@ import {
   AppRegistry,
   Image,
 } from 'react-native';
-
-const remote = 'https://s15.postimg.org/tw2qkvmcb/400px.png';
+const bg = require('../../../assets/images/bg.png');
 
 export default class BackgroundImage extends Component {
 
   render() {
-    const resizeMode = 'center';
 
     return (
       <Image
         style={{
-          flex: 1,
-          resizeMode,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
         }}
-        source={{ uri: remote }}
+        source={bg}
       />
     );
   }
