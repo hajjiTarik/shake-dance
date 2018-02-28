@@ -1,27 +1,17 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { connect } from 'react-redux';
+import soundHOC from '../../Components/sound';
 import BackgroundImage from '../../Components/BackgroundImage';
 import MainMenu from '../../Components/MainMenu';
-import Sound from 'react-native-sound';
-import { playSound, setTestState } from './../../Components/sound';
 
-
-export default class extends Component {
+class Home extends Component {
 
   constructor(props) {
     super(props);
-    Sound.setCategory('Playback', true); // true = mixWithOthers
-
   }
 
   render() {
-    const testInfo =  {
-        title: 'mp3 via require()',
-        isRequire: true,
-        url: require('./../../../assets/sounds/sound-1.mp3'),
-      };
-
-    playSound(testInfo, this);
     return (
       <View scrollEnabled={false} style={styles.contentContainer}>
         <BackgroundImage />
@@ -30,6 +20,14 @@ export default class extends Component {
     );
   }
 }
+
+const source = {
+  isRequire: true,
+  url: require('./../../../assets/sounds/sound-1.mp3'),
+};
+
+export const ConnectedHome = connect()(Home);
+export default soundHOC(ConnectedHome, source);
 
 const styles = StyleSheet.create({
   contentContainer: {

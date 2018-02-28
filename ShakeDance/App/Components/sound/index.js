@@ -1,31 +1,45 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Sound from 'react-native-sound';
-
-export function setTestState(testInfo, component, status) {
-}
+import { playSound } from './../../utils/sound';
 
 /**
- * Generic play function for majority of tests
+ * @param WrappedComponent class
+ * @param soundList Array
  */
-export function playSound(testInfo, component) {
-
-  const callback = (error, sound) => {
-    if (error) {
-      Alert.alert('error', error.message);
-      setTestState(testInfo, component, 'fail');
-      return;
+export default (WrappedComponent, soundList) => {
+  return class extends Component {
+    constructor(props) {
+      super(props);
+      this.constructor.displayName = `Sound(${WrappedComponent.name})`;
+      Sound.setCategory('Playback', true);
+      this.output = this.output.bind(this);
     }
-    setTestState(testInfo, component, 'playing');
-    testInfo.onPrepared && testInfo.onPrepared(sound, component);
-    sound.play(() => {
-      setTestState(testInfo, component, 'win');
-      sound.release();
-    });
-  };
 
-  // If the audio is a 'require' then the second parameter must be the callback.
-  if (testInfo.isRequire) {
-    const sound = new Sound(testInfo.url, error => callback(error, sound));
-  } else {
-    const sound = new Sound(testInfo.url, testInfo.basePath, error => callback(error, sound));
+    static contextTypes = { store: PropTypes.object };
+
+    output ({play, pause, stop, reset, release}){
+      return ({
+        play,
+        pause,
+        stop,
+        reset,
+        release,
+      });
+    }
+
+    componentDidMount() {
+      const dispatch = this.context.store.dispatch;
+
+      this.setState(()=>({
+        soundList
+      }));
+
+      playSound(soundList, dispatch, {type: 'PLAY_SOUND', url : soundList.url}, this.output);
+    }
+
+    render() {
+      return <WrappedComponent {...this.props} {...this.output}  />;
+    }
   }
 }
