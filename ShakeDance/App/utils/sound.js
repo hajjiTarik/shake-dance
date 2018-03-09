@@ -15,16 +15,11 @@ export const playSound = (info, dispatch, action, cb) => {
       sound.release();
     });
 
+    sound.setNumberOfLoops(-1);
+    sound.setPan(1);
 
     if(cb && typeof cb === 'function') {
-      cb({
-        play: sound.play,
-        pause: sound.pause,
-        stop: sound.stop,
-        reset: sound.reset,
-        release: sound.release,
-      });
-      dispatch({type: 'POPULATE STORE'});
+      cb(sound);
     }
   };
 

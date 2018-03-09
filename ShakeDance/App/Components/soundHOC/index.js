@@ -14,18 +14,17 @@ export default (WrappedComponent, soundList) => {
       this.constructor.displayName = `Sound(${WrappedComponent.name})`;
       Sound.setCategory('Playback', true);
       this.output = this.output.bind(this);
+      this.state = {
+        sound: null
+      };
     }
 
     static contextTypes = { store: PropTypes.object };
 
-    output ({play, pause, stop, reset, release}){
-      return ({
-        play,
-        pause,
-        stop,
-        reset,
-        release,
-      });
+    output (sound){
+      this.setState(()=>({
+        sound
+      }));
     }
 
     componentDidMount() {
@@ -35,11 +34,14 @@ export default (WrappedComponent, soundList) => {
         soundList
       }));
 
+      console.log(this.context.store.getState());
+
       playSound(soundList, dispatch, {type: 'PLAY_SOUND', url : soundList.url}, this.output);
     }
 
     render() {
-      return <WrappedComponent {...this.props} {...this.output}  />;
+      if(this.state.sound !== null) return <WrappedComponent {...this.props} {...this.state}  />;
+      return <WrappedComponent {...this.props}  />;
     }
   }
 }

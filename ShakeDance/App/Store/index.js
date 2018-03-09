@@ -25,4 +25,3 @@ export class Store {
 
 // singleton
 export const store = Object.freeze(new Store({}));
-

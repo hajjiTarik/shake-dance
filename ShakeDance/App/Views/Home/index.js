@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
-import soundHOC from '../../Components/sound';
 import BackgroundImage from '../../Components/BackgroundImage';
-import MainMenu from '../../Components/MainMenu';
+import PlayButton from '../../Components/PlayButton';
+import Footer from '../../Components/Footer';
 
+@connect()
 class Home extends Component {
 
   constructor(props) {
@@ -15,19 +16,14 @@ class Home extends Component {
     return (
       <View scrollEnabled={false} style={styles.contentContainer}>
         <BackgroundImage />
-        <MainMenu />
+        <PlayButton />
+        <Footer />
       </View>
     );
   }
 }
 
-const source = {
-  isRequire: true,
-  url: require('./../../../assets/sounds/sound-1.mp3'),
-};
-
-export const ConnectedHome = connect()(Home);
-export default soundHOC(ConnectedHome, source);
+export default Home;
 
 const styles = StyleSheet.create({
   contentContainer: {
